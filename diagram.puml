@@ -1,0 +1,24 @@
+@startuml
+actor "Client" as C
+actor "Student" as S
+
+rectangle "Portfolio Website" {
+    usecase "View Home Page" as UC1
+    usecase "View About Page" as UC2
+    usecase "View Projects Page" as UC3
+    usecase "View Project Details" as UC4
+    usecase "Contact Owner" as UC5
+}
+
+C --> UC1
+C --> UC2
+C --> UC3
+C --> UC4
+C --> UC5
+
+S --> UC1
+S --> UC2
+S --> UC3
+S --> UC4
+S --> UC5
+@enduml
