@@ -14,15 +14,15 @@ skinparam rectangle {
 }
 
 actor "Client" as C
-actor "Étudiant" as S
+actor "Student" as S
 
-rectangle "Portfolio Laravel" {
-  usecase "Consulter\nAccueil" as UC1
-  usecase "Consulter\nÀ propos" as UC2
-  usecase "Consulter\nProjets" as UC3
-  usecase "Voir détails\nProjet" as UC4
-  usecase "Consulter\nServices" as UC5
-  usecase "Envoyer\nMessage (Contact)" as UC6
+rectangle "Laravel Portfolio" {
+  usecase "View\nHome" as UC1
+  usecase "View\nAbout" as UC2
+  usecase "View\nProjects" as UC3
+  usecase "View\nProject Details" as UC4
+  usecase "View\nServices" as UC5
+  usecase "Send\nMessage (Contact)" as UC6
 }
 
 C -- UC1
@@ -39,7 +39,7 @@ S -- UC4
 S -- UC5
 S -- UC6
 
-' Relation de dépendance (optionnelle)
+' Optional dependency relation
 UC4 .> UC3 : <<extends>>
 
 @enduml

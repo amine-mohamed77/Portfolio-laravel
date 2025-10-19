@@ -1,0 +1,19 @@
+graph TD
+    subgraph HomeSection["Home"]
+        A1[Profile]
+        A2[Skills]
+        A3[Contact]
+    end
+
+    A1 -- B[Projects]
+    A2 -- C[About]
+    B -- D[Project Details]
+    D -- A1
+    C -- A2
+
+    %% Styling
+    classDef main fill:#fffbe6,stroke:#000,color:#000,stroke-width:1px;
+    classDef node fill:#f9f9ff,stroke:#666,color:#000,stroke-width:1px;
+
+    class HomeSection main;
+    class A1,A2,A3,B,C,D node;
