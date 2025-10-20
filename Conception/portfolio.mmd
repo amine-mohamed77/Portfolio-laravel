@@ -5,11 +5,11 @@ graph TD
         A3[Contact]
     end
 
-    A1 -- B[Projects]
-    A2 -- C[About]
-    B -- D[Project Details]
-    D -- A1
-    C -- A2
+    A1 --> B[Projects]
+    A2 --> C[About]
+    B --> D[Project Details]
+    D --> A1
+    C --> A2
 
     %% Styling
     classDef main fill:#fffbe6,stroke:#000,color:#000,stroke-width:1px;
