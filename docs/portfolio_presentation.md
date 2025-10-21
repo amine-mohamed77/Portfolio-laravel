@@ -96,4 +96,12 @@ style: |
 
 ---
 
+
+## Conception: digrameClass
+
+![digrameClass](imgs/image4.png)
+
+---
+
+
 # Thank You 
